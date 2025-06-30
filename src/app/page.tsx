@@ -5,7 +5,6 @@ import { TipForm } from "@/components/TipForm";
 import { TipList } from "@/components/TipList";
 import { TipEntry } from "@/types";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const [entries, setEntries] = useState<TipEntry[]>([]);
