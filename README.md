@@ -35,7 +35,7 @@ Follow these steps to run the application locally on your machine.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/Krychq/tip-manager.git](https://github.com/Krychq/tip-manager.git)
+    git clone https://github.com/Krychq/tip-manager.git
     cd tip-manager
     ```
 
