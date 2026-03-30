@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💰 Tip Manager
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-First, run the development server:
+**Tip Manager** is a lightning-fast, modern web application designed to help service workers and drivers effortlessly calculate and track their daily tips. Built with the latest Next.js 15 and React 19, it features a clean, accessible interface for managing earnings on the go.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🌐 **See it in action:** [https://tips-manager.netlify.app/](https://tips-manager.netlify.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Smart Calculations:** Instantly figure out the tip amount by entering the base fare (*cena przejazdu*) and the total cash handed over by the customer. 
+* **Quick-Add Buttons:** Speed up data entry with pre-defined, one-tap buttons for common denominations (5 zł, 10 zł, 20 zł, 30 zł, 50 zł).
+* **Dual Input Modes:** Flexibly switch between "Fare + Tip" (*Przejazd + napiwek*) and "Only Tip" (*Tylko napiwek*) recording modes.
+* **Running Total:** Keep a real-time tally of your total accumulated tips in złotówkach.
+* **Modern UI/UX:** Fully responsive, accessible, and sleek design powered by Tailwind CSS v4 and Radix UI primitives.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+* **Framework:** Next.js 15 (App Router)
+* **Library:** React 19
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS
+* **Components:** Shadcn UI, Lucide React (Icons)
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Follow these steps to run the application locally on your machine.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Prerequisites
 
-## Deploy on Vercel
+* [Node.js](https://nodejs.org/) (v18 or higher recommended)
+* npm, yarn, pnpm, or bun
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Installation & Execution
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Krychq/tip-manager.git](https://github.com/Krychq/tip-manager.git)
+    cd tip-manager
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server:**
+    This project uses Turbopack for lightning-fast local development.
+    ```bash
+    npm run dev
+    ```
+
+4.  **View the app:**
+    Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+## 📂 Project Structure Snapshot
+
+A quick overview of the core application architecture:
+
+* **`src/app/`**: Contains the Next.js App Router core files (`page.tsx`, `layout.tsx`, `globals.css`).
+* **`src/components/ui/`**: Houses reusable UI components built with Radix and Tailwind.
+* **`src/components/TipForm.tsx`**: The main interactive form for entering fares and calculating tips.
+* **`src/components/TipList.tsx`**: Component responsible for rendering the history/list of recorded tips.
+* **`src/lib/`**: Contains utility functions (`utils.ts`) and TypeScript type definitions (`types.ts`).
+
+## 🤝 Contributing
+
+Contributions are always welcome! Whether it's adding a new feature, fixing a bug, or improving documentation, feel free to open a pull request.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
